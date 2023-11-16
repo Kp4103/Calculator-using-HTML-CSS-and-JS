@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: palegoldenrod;
+    margin: 0;
+    font-family: "Arial", "sans-serif";
+    border: black;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 200px;
+    gap: 10px;
+    padding: 20px;
+    background-color: silver;
+    border-radius: 10px;
+}
+
+.display {
+    grid-column: span 4;
+    height: 50px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+    font-size: 24px;
+}
+
+button {
+    height: 50px;
+    font-size: 24px;
+}
+
+.deciButton {
+    background-color: #afaf4c; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+}
+
+.clearButton {
+    background-color: #f44336; /* Red background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+}
+
+.opButton {
+    background-color: #af4ca5;
+    color: white;
+    border: none;
+}
+
+.eqButton {
+    grid-column: span 4;
+    background-color: #4caf56;
+    color: white;
+    border: none;
+}
+
+.numButton {
+    background-color: #4c68af;
+    color: white;
+    border: none;
+}
